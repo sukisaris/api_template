@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import User from '../models/User';
 import { hashSync, genSaltSync } from 'bcrypt';
 
-import IController from '../props/controller';
+import IController from '../props';
 
 interface IUserRequest extends Request {
   body: { name?: string; email?: string; password?: string };
