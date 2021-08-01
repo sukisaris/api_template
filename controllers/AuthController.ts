@@ -39,7 +39,7 @@ class AuthController {
           }
         }
       } else {
-        res.status(400).json({ message: 'please enter all fields not match' });
+        res.status(400).json({ message: 'please enter all fields' });
       }
     } catch (error) {
       res.status(500).json({ error });
